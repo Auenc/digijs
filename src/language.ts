@@ -1,4 +1,9 @@
 export enum Language {
-  WELSH = 'cy',
-  BRETON = 'br',
+  Welsh = 'cy',
+  Breton = 'br',
+  Cornish = 'kw',
+  German = 'de',
+  Irish = 'ga',
+  ScottishGaelic = 'gd',
+  Spanish = 'es',
 }
