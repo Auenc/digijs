@@ -1,0 +1,24 @@
+{
+  "name": "digijs",
+  "version": "0.0.1",
+  "description": "A Typescript library for the Open Celtic Dictionary API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "Lewis Campbell",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "typescript": "^4.7.3"
+  }
+}
