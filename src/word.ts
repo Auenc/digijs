@@ -1,3 +1,4 @@
+import { Conjugations } from './conjugations'
 import { Language } from './language'
 import { Mutations } from './mutations'
 import { WordType } from './word-type'
@@ -9,4 +10,5 @@ export interface Word {
   confirmed: boolean
   type: WordType
   mutations?: Mutations
+  conjugations?: Conjugations
 }
