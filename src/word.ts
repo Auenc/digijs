@@ -1,6 +1,7 @@
 import { Conjugations } from './conjugations'
 import { Language } from './language'
 import { Mutations } from './mutations'
+import { Translation, Translations } from './translations'
 import { WordType } from './word-type'
 
 export interface Word {
@@ -11,4 +12,6 @@ export interface Word {
   type: WordType
   mutations?: Mutations
   conjugations?: Conjugations
+  translations?: Translations
+  related?: Translation
 }
