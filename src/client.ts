@@ -1,10 +1,18 @@
+import axios from "axios";
 import { Query } from "./query";
+import { Word } from "./word";
 
 export class Client {
     constructor(private url: string) {}
 
-    get(query: Query) {
-
+    async get(query: Query): Promise<Word[]> {
+        const url = this.createURL(query)
+        const result = await axios.get(url)
+        const response = result.data
+        if (!response.success) {
+            throw new Error(response.message)
+        }
+        return result.data.results
     }
 
     createURL(query: Query): string {

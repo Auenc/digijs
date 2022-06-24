@@ -12,6 +12,6 @@ export interface Word {
   type: WordType
   mutations?: Mutations
   conjugations?: Conjugations
-  translations?: Translations
+  translations?: Translations[]
   related?: Translation
 }

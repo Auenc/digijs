@@ -6,4 +6,7 @@ export enum Language {
   Irish = 'ga',
   ScottishGaelic = 'gd',
   Spanish = 'es',
+  NorwegianNynorsk = 'nn',
+  English = 'en',
+  French = 'fr',
 }
