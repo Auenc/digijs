@@ -2,8 +2,13 @@
     "compilerOptions": {
       "module": "commonjs",
       "target": "es2015",
+      "lib": ["es2017", "DOM"],
+      "rootDir": "./src",
+      "esModuleInterop": true,
       "declaration": true,
-      "outDir": "dist"
+      "outDir": "lib",
+      "sourceMap": true,
+      "strict": true
     },
     "include": [
       "src/**/*"

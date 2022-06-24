@@ -1,1 +1,5 @@
 export { Language } from './language'
+export { WordType } from './word-type'
+export { Word } from './word'
+export { Translation, Translations } from './translations'
+export { Mutations } from './mutations'

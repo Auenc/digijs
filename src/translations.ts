@@ -8,10 +8,14 @@ export interface Translations {
     ga?: Translation[]
     gd?: Translation[]
     es?: Translation[]
+    nn?: Translation[]
+    fr?: Translation[]
+    de?: Translation[]
+    en?: Translation[]
 }
 
 export interface Translation {
-    id: number
+    id?: number
     lang: Language
     value: string
     version?: string

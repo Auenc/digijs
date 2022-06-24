@@ -4,6 +4,8 @@ export interface Conjugations {
   pluperfect: ConjugationList
   imperative: ConjugationList
   preterite: ConjugationList
+  pastParticiple?: string[]
+  gerund?: string[]
 }
 
 export interface ConjugationList {
