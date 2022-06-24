@@ -1,9 +1,9 @@
 {
   "name": "osdpjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Typescript library for the Open Source Dictionary Project",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "/lib"
   ],
