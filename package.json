@@ -1,7 +1,7 @@
 {
-  "name": "digijs",
+  "name": "osdpjs",
   "version": "0.0.1",
-  "description": "A Typescript library for the Open Celtic Dictionary API",
+  "description": "A Typescript library for the Open Source Dictionary Project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
