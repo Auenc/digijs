@@ -1,9 +1,9 @@
 export interface Conjugations {
-  conditional: ConjugationList
-  future: ConjugationList
-  pluperfect: ConjugationList
-  imperative: ConjugationList
-  preterite: ConjugationList
+  conditional: ConjugationList | string[]
+  future: ConjugationList | string[]
+  pluperfect: ConjugationList | string[]
+  imperative: ConjugationList | string[]
+  preterite: ConjugationList | string[]
   pastParticiple?: string[]
   gerund?: string[]
 }
