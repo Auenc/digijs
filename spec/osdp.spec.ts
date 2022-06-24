@@ -1,9 +1,9 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
-import { OSDP } from '../src/client'
+import { OSDP } from '../src/osdp'
 import { Language } from '../src/language'
 import { Query } from '../src/query'
-import { FailedResponse, SuccessfulResponse, SuccessfulWord } from './client.responses.spec'
+import { FailedResponse, SuccessfulResponse, SuccessfulWord } from './osdp.responses.spec'
 
 describe('Client', () => {
   let client: OSDP
