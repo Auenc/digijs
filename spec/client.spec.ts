@@ -1,19 +1,19 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
-import { Client } from '../src/client'
+import { OSDP } from '../src/client'
 import { Language } from '../src/language'
 import { Query } from '../src/query'
 import { FailedResponse, SuccessfulResponse, SuccessfulWord } from './client.responses.spec'
 
 describe('Client', () => {
-  let client: Client
+  let client: OSDP
   let mock: MockAdapter
 
   beforeAll(() => {
     mock = new MockAdapter(axios)
   })
   beforeEach(() => {
-    client = new Client('http://example.com')
+    client = new OSDP('http://example.com')
   })
   afterEach(() => {
     mock.reset()

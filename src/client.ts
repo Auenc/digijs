@@ -2,7 +2,7 @@ import axios from "axios";
 import { Query } from "./query";
 import { Word } from "./word";
 
-export class Client {
+export class OSDP {
     constructor(private url: string) {}
 
     async get(query: Query): Promise<Word[]> {
