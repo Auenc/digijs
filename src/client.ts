@@ -8,6 +8,18 @@ export class Client {
     }
 
     createURL(query: Query): string {
-        return ``
+        const url = new URL(this.url)
+        url.pathname = '/api/dictionary'
+
+        Object.entries(query).forEach(([name, value]) => url.searchParams.set(name, value))
+
+        return url.href
+    }
+
+    isValidQuery(query: Query): boolean {
+        if(!query.id && !query.word) {
+            return false
+        }
+        return true
     }
 }
