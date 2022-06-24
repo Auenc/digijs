@@ -87,7 +87,7 @@ describe('Client', () => {
       })
     })
     describe('Failed request', () => {
-      fit('200: should throw an error if the API returns an error', async () => {
+      it('200: should throw an error if the API returns an error', async () => {
         const query: Query = {
           lang: Language.Welsh,
           word: 'nabod',
