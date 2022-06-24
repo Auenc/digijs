@@ -6,6 +6,9 @@ export class Client {
     constructor(private url: string) {}
 
     async get(query: Query): Promise<Word[]> {
+        if(!this.isValidQuery(query)) {
+            throw new Error('invalid query provided')
+        }
         const url = this.createURL(query)
         const result = await axios.get(url)
         const response = result.data
